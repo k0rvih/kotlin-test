@@ -1,6 +1,6 @@
-import jetbrains.buildServer.configs.kotlin.v2018_1.*
-import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.MSBuildStep
-import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.msBuild
+import jetbrains.buildServer.configs.kotlin.v2018_2.*
+import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.MSBuildStep
+import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.msBuild
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -24,7 +24,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2018.1"
+version = "2018.2"
 
 project {
 
@@ -37,7 +37,7 @@ object BuildAndPackage : BuildType({
     buildNumberPattern = "1.0.%build.counter%"
 
     vcs {
-        root(AbsoluteId("Kotlin"))
+        root(AbsoluteId("korvin"))
     }
 
     steps {
