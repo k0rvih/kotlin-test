@@ -37,7 +37,7 @@ object BuildAndPackage : BuildType({
     buildNumberPattern = "1.0.%build.counter%"
 
     vcs {
-        root(AbsoluteId("korvin"))
+        root(AbsoluteId("Kotlin"))
     }
 
     steps {
